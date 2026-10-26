@@ -1,0 +1,10 @@
+{
+  "lspServers": {
+    "typescript": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "transport": "stdio",
+      "initializationOptions": {}
+    }
+  }
+}

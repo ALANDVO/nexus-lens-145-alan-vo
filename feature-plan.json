@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "current_feature": "core-marketplace-skeleton",
+  "features": [
+    {
+      "id": "core-marketplace-skeleton",
+      "title": "Core marketplace skeleton with plugin registry",
+      "status": "done",
+      "acceptance": [
+        "FastAPI server starts and serves /health endpoint",
+        "Marketplace JSON served at /marketplace.json with valid schema",
+        "Plugin directory structure exists with at least one example plugin",
+        "README with install/run instructions"
+      ],
+      "implementation": [
+        "main.py",
+        "plugins/marketplace.json",
+        "plugins/typescript-lsp/.lsp.json",
+        "plugins/typescript-lsp/README.md",
+        "plugins/vue-volar-lsp/.lsp.json",
+        "plugins/vue-volar-lsp/README.md",
+        "requirements.txt",
+        "README.md"
+      ],
+      "tests": [
+        "tested via inline script: /health, /marketplace.json, /plugins/typescript-lsp, /plugins/vue-volar-lsp"
+      ]
+    },
+    {
+      "id": "vue-volar-lsp-plugin",
+      "title": "Add Vue/Volar LSP plugin",
+      "status": "done",
+      "acceptance": [
+        "plugins/vue-volar-lsp/.lsp.json exists with valid LSP config",
+        "Marketplace entry references the plugin",
+        "Plugin installs and provides LSP for .vue files"
+      ],
+      "implementation": [
+        "plugins/vue-volar-lsp/.lsp.json",
+        "plugins/vue-volar-lsp/README.md",
+        "plugins/marketplace.json (entry)"
+      ],
+      "tests": [
+        "tested via /plugins/vue-volar-lsp endpoint"
+      ]
+    },
+    {
+      "id": "lsp-json-fix-existing-plugins",
+      "title": "Add .lsp.json to all existing LSP plugins",
+      "status": "planned",
+      "acceptance": [
+        "Each LSP plugin directory has .lsp.json",
+        "Marketplace.json references match plugin configs"
+      ],
+      "implementation": [],
+      "tests": []
+    }
+  ]
+}
