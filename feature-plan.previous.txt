@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "current_feature": "feat-001",
+  "features": [
+    {
+      "id": "feat-001",
+      "title": "Project scaffold (FastAPI + React + marketplace.json)",
+      "status": "done",
+      "acceptance": [
+        "FastAPI app runs on port 8000",
+        "React dev server runs on port 3000 (proxied)",
+        "/api/marketplace returns valid JSON with plugins array",
+        "Frontend renders plugin list from API",
+        "marketplace.json exists with schema matching reference",
+        "Install instructions in README",
+        "Basic test runs"
+      ],
+      "implementation": [
+        "backend/main.py",
+        "frontend/src/App.tsx",
+        "frontend/src/main.tsx",
+        "frontend/index.html",
+        "frontend/vite.config.ts",
+        "marketplace.json",
+        "pyproject.toml",
+        "README.md"
+      ],
+      "tests": [
+        "tests/test_api.py"
+      ]
+    },
+    {
+      "id": "feat-002",
+      "title": "Marketplace API: list plugins",
+      "status": "planned",
+      "acceptance": [],
+      "implementation": [],
+      "tests": []
+    },
+    {
+      "id": "feat-003",
+      "title": "Marketplace API: plugin detail + install manifest",
+      "status": "planned",
+      "acceptance": [],
+      "implementation": [],
+      "tests": []
+    },
+    {
+      "id": "feat-004",
+      "title": "Add Vue/Volar LSP plugin (issue #232)",
+      "status": "planned",
+      "acceptance": [],
+      "implementation": [],
+      "tests": []
+    },
+    {
+      "id": "feat-005",
+      "title": "Fix LSP plugins missing .lsp.json (issue #379)",
+      "status": "done",
+      "acceptance": [
+        "Each LSP plugin directory under plugins/ contains a .lsp.json file",
+        ".lsp.json content matches the lspServers config from marketplace.json",
+        "All 4 initial plugins have .lsp.json: typescript-lsp, pyright-lsp, gopls-lsp, rust-analyzer-lsp",
+        "Backend tests still pass (5/5)"
+      ],
+      "implementation": [
+        "plugins/typescript-lsp/.lsp.json",
+        "plugins/pyright-lsp/.lsp.json",
+        "plugins/gopls-lsp/.lsp.json",
+        "plugins/rust-analyzer-lsp/.lsp.json"
+      ],
+      "tests": [
+        "tests/test_api.py"
+      ]
+    }
+    {
+      "id": "feat-006",
+      "title": "Fix marketplace.json schema validation (issue #587)",
+      "status": "planned",
+      "acceptance": [],
+      "implementation": [],
+      "tests": []
+    },
+    {
+      "id": "feat-007",
+      "title": "GitHub plugin auth fix (issue #283)",
+      "status": "planned",
+      "acceptance": [],
+      "implementation": [],
+      "tests": []
+    }
+  ]
+}
