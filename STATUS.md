@@ -2,11 +2,11 @@
 
 Work in progress; not a release-readiness or successful QA claim.
 
-Version: 1.0.0
+Version: 1.1.0
 
 ## Outstanding findings
 
-No code checkpoint to publish yet
+Repair the existing feature plan format while preserving its roadmap: Feature requires title and acceptance criteria
 
 ## Next round
 
