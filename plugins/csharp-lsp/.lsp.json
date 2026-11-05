@@ -1,0 +1,11 @@
+{
+  "csharp-ls": {
+    "command": "csharp-ls",
+    "args": [],
+    "extensionToLanguage": {
+      ".cs": "csharp"
+    },
+    "transport": "stdio",
+    "initializationOptions": {}
+  }
+}

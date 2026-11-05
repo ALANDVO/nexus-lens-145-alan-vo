@@ -1,10 +1,29 @@
 # Changelog
 
-## 1.1.0 — work-in-progress checkpoint
+## 1.2.0 — work-in-progress checkpoint
 
 Partial code published for continued development. Known issues: STATUS.md.
 
-All notable changes to this project will be documented in this format.
+## 1.1.0 — work-in-progress checkpoint
+
+### Added
+- 7 additional LSP plugins to match official marketplace (11 total):
+  - clangd-lsp (C/C++)
+  - php-lsp (PHP via Intelephense)
+  - swift-lsp (Swift via sourcekit-lsp)
+  - kotlin-lsp (Kotlin via kotlin-language-server)
+  - csharp-lsp (C# via csharp-ls)
+  - jdtls-lsp (Java via JDTLS)
+  - lua-lsp (Lua via lua-language-server)
+- Each plugin has .lsp.json configuration file
+- All 11 plugins registered in marketplace.json
+
+### Verified
+- Backend tests pass (5/5)
+- Frontend builds successfully
+- Backend linting passes (ruff)
+
+Partial code published for continued development. Known issues: STATUS.md.
 
 ## [0.1.0] - 2026-10-25
 

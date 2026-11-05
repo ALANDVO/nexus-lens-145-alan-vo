@@ -1,0 +1,16 @@
+{
+  "clangd": {
+    "command": "clangd",
+    "args": [],
+    "extensionToLanguage": {
+      ".c": "cpp",
+      ".cc": "cpp",
+      ".cpp": "cpp",
+      ".cxx": "cpp",
+      ".h": "cpp",
+      ".hpp": "cpp"
+    },
+    "transport": "stdio",
+    "initializationOptions": {}
+  }
+}
