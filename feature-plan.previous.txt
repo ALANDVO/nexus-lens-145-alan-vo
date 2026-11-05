@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "current_feature": "feat-001",
+  "current_feature": "feat-004",
   "features": [
     {
       "id": "feat-001",
@@ -32,47 +32,65 @@
     {
       "id": "feat-002",
       "title": "Marketplace API: list plugins",
-      "status": "planned",
-      "acceptance": [],
-      "implementation": [],
-      "tests": []
+      "status": "done",
+      "acceptance": [
+        "GET /api/marketplace returns all plugins",
+        "Plugin structure validated"
+      ],
+      "implementation": [
+        "backend/main.py"
+      ],
+      "tests": [
+        "tests/test_api.py"
+      ]
     },
     {
       "id": "feat-003",
       "title": "Marketplace API: plugin detail + install manifest",
-      "status": "planned",
-      "acceptance": [],
-      "implementation": [],
-      "tests": []
+      "status": "done",
+      "acceptance": [
+        "GET /api/plugins/{plugin_id} returns plugin details",
+        "404 for unknown plugins"
+      ],
+      "implementation": [
+        "backend/main.py"
+      ],
+      "tests": [
+        "tests/test_api.py"
+      ]
     },
     {
       "id": "feat-004",
+      "title": "Add remaining LSP plugins to match official marketplace (7 more)",
+      "status": "done",
+      "acceptance": [
+        "Add clangd-lsp, php-lsp, swift-lsp, kotlin-lsp, csharp-lsp, jdtls-lsp, lua-lsp",
+        "Each has .lsp.json matching marketplace.json config",
+        "All 11 LSP plugins present in marketplace.json",
+        "Backend tests still pass (5/5)"
+      ],
+      "implementation": [
+        "plugins/clangd-lsp/.lsp.json",
+        "plugins/php-lsp/.lsp.json",
+        "plugins/swift-lsp/.lsp.json",
+        "plugins/kotlin-lsp/.lsp.json",
+        "plugins/csharp-lsp/.lsp.json",
+        "plugins/jdtls-lsp/.lsp.json",
+        "plugins/lua-lsp/.lsp.json",
+        "marketplace.json"
+      ],
+      "tests": [
+        "tests/test_api.py"
+      ]
+    },
+    {
+      "id": "feat-005",
       "title": "Add Vue/Volar LSP plugin (issue #232)",
       "status": "planned",
       "acceptance": [],
       "implementation": [],
       "tests": []
     },
-    {
-      "id": "feat-005",
-      "title": "Fix LSP plugins missing .lsp.json (issue #379)",
-      "status": "done",
-      "acceptance": [
-        "Each LSP plugin directory under plugins/ contains a .lsp.json file",
-        ".lsp.json content matches the lspServers config from marketplace.json",
-        "All 4 initial plugins have .lsp.json: typescript-lsp, pyright-lsp, gopls-lsp, rust-analyzer-lsp",
-        "Backend tests still pass (5/5)"
-      ],
-      "implementation": [
-        "plugins/typescript-lsp/.lsp.json",
-        "plugins/pyright-lsp/.lsp.json",
-        "plugins/gopls-lsp/.lsp.json",
-        "plugins/rust-analyzer-lsp/.lsp.json"
-      ],
-      "tests": [
-        "tests/test_api.py"
-      ]
-    }
     {
       "id": "feat-006",
       "title": "Fix marketplace.json schema validation (issue #587)",

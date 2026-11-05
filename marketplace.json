@@ -92,6 +92,166 @@
           "initializationOptions": {}
         }
       }
+  },
+    {
+      "id": "clangd-lsp",
+      "name": "clangd LSP",
+      "description": "C/C++ language server using clangd",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["c", "cpp", "c++", "lsp"],
+      "source": "plugins/clangd-lsp",
+      "lspServers": {
+        "clangd": {
+          "command": "clangd",
+          "args": [],
+          "extensionToLanguage": {
+            ".c": "cpp",
+            ".cc": "cpp",
+            ".cpp": "cpp",
+            ".cxx": "cpp",
+            ".h": "cpp",
+            ".hpp": "cpp"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
+    },
+    {
+      "id": "php-lsp",
+      "name": "PHP LSP",
+      "description": "PHP language server using Intelephense",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["php", "lsp"],
+      "source": "plugins/php-lsp",
+      "lspServers": {
+        "intelephense": {
+          "command": "intelephense",
+          "args": ["--stdio"],
+          "extensionToLanguage": {
+            ".php": "php"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
+    },
+    {
+      "id": "swift-lsp",
+      "name": "Swift LSP",
+      "description": "Swift language server using sourcekit-lsp",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["swift", "lsp"],
+      "source": "plugins/swift-lsp",
+      "lspServers": {
+        "sourcekit-lsp": {
+          "command": "sourcekit-lsp",
+          "args": [],
+          "extensionToLanguage": {
+            ".swift": "swift"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
+    },
+    {
+      "id": "kotlin-lsp",
+      "name": "Kotlin LSP",
+      "description": "Kotlin language server using kotlin-language-server",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["kotlin", "lsp"],
+      "source": "plugins/kotlin-lsp",
+      "lspServers": {
+        "kotlin-language-server": {
+          "command": "kotlin-language-server",
+          "args": [],
+          "extensionToLanguage": {
+            ".kt": "kotlin",
+            ".kts": "kotlin"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
+    },
+    {
+      "id": "csharp-lsp",
+      "name": "C# LSP",
+      "description": "C# language server using csharp-ls",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["csharp", "c#", "dotnet", "lsp"],
+      "source": "plugins/csharp-lsp",
+      "lspServers": {
+        "csharp-ls": {
+          "command": "csharp-ls",
+          "args": [],
+          "extensionToLanguage": {
+            ".cs": "csharp"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
+    },
+    {
+      "id": "jdtls-lsp",
+      "name": "JDTLS LSP",
+      "description": "Java language server using JDTLS",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["java", "lsp"],
+      "source": "plugins/jdtls-lsp",
+      "lspServers": {
+        "jdtls": {
+          "command": "jdtls",
+          "args": [],
+          "extensionToLanguage": {
+            ".java": "java"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
+    },
+    {
+      "id": "lua-lsp",
+      "name": "Lua LSP",
+      "description": "Lua language server using lua-language-server",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "repository": "https://github.com/anthropics/claude-plugins-official",
+      "license": "Apache-2.0",
+      "keywords": ["lua", "lsp"],
+      "source": "plugins/lua-lsp",
+      "lspServers": {
+        "lua-language-server": {
+          "command": "lua-language-server",
+          "args": ["--stdio"],
+          "extensionToLanguage": {
+            ".lua": "lua"
+          },
+          "transport": "stdio",
+          "initializationOptions": {}
+        }
+      }
     }
   ]
 }
