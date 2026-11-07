@@ -43,3 +43,7 @@ Partial code published for continued development. Known issues: STATUS.md.
 - Python virtual environment setup
 - Frontend build pipeline with TypeScript and Vite
 - CORS configuration for local development
+
+---
+
+Alan Vo · [alanvo.net](https://alanvo.net)
