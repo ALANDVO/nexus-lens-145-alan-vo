@@ -1,6 +1,6 @@
 [project]
 name = "nexus-lens"
-version = "0.1.0"
+version = "1.4.0"
 description = "Official, Anthropic-managed directory of high quality Claude Code Plugins"
 readme = "README.md"
 requires-python = ">=3.11"
