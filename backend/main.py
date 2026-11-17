@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 import json
 
-app = FastAPI(title="Nexus Lens Marketplace", version="0.1.0")
+app = FastAPI(title="Nexus Lens Marketplace", version="1.3.0")
 
 app.add_middleware(
     CORSMiddleware,
