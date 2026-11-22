@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: nexus-lens
-Version: 0.1.0
+Version: 1.4.0
 Summary: Official, Anthropic-managed directory of high quality Claude Code Plugins
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
@@ -14,7 +14,12 @@ Requires-Dist: pytest-asyncio>=0.23.0; extra == "dev"
 Requires-Dist: httpx>=0.27.0; extra == "dev"
 Requires-Dist: ruff>=0.4.0; extra == "dev"
 
-# Nexus Lens
+# Nexus Lens — Alan Vo
+
+Current version: `1.4.0`.
+
+> Work in progress. This checkpoint may be incomplete or fail tests. See PLAN.md and STATUS.md before use.
+
 
 Official, Anthropic-managed directory of high quality Claude Code Plugins.
 
@@ -104,3 +109,9 @@ npx tsc --noEmit
 ## License
 
 Apache-2.0 - see LICENSE file for details.
+
+Maintainer: Alan Vo <alanvo@gmail.com>
+
+---
+
+Alan Vo · [alanvo.net](https://alanvo.net) · [X: @alanvoasi](https://x.com/alanvoasi)

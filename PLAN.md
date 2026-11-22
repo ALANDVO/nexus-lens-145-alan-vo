@@ -19,6 +19,19 @@ Implementation: `backend/main.py`, `frontend/src/App.tsx`, `marketplace.json`, `
 
 Tests: `tests/test_api.py`
 
+### feat-005 — Add Vue/Volar LSP plugin (issue #232)
+
+Status: done
+
+Acceptance:
+- Volarlsp LSP plugin added to marketplace.json
+- .lsp.json created for volar-lsp plugin
+- Backend serves volar-lsp plugin detail correctly
+
+Implementation: `plugins/volar-lsp/.lsp.json`, `marketplace.json (volar-lsp entry)`
+
+Tests: `tests/test_api.py (plugin detail endpoint)`
+
 ---
 
 Alan Vo · [alanvo.net](https://alanvo.net) · [X: @alanvoasi](https://x.com/alanvoasi)
