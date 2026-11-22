@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.5.0 — work-in-progress checkpoint
+
+Partial code published for continued development. Known issues: STATUS.md.
+
+## 1.4.1 — volar LSP plugin addition
+
+### Added
+- Volarlsp LSP plugin (issue #232):
+  - plugins/volar-lsp/.lsp.json created
+  - marketplace.json entry added with vue-language-server configuration
+  - Backend API serves volar-lsp plugin detail correctly
+
+### Verified
+- All 5 API tests pass
+- Plugin detail endpoint returns volar-lsp data correctly
+- Frontend TypeScript compiles without errors
+
 ## 1.4.0 — work-in-progress checkpoint
 
 Partial code published for continued development. Known issues: STATUS.md.

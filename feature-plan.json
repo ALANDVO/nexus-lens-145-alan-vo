@@ -28,6 +28,23 @@
       "tests": [
         "tests/test_api.py"
       ]
+    },
+    {
+      "id": "feat-005",
+      "title": "Add Vue/Volar LSP plugin (issue #232)",
+      "status": "done",
+      "acceptance": [
+        "Volarlsp LSP plugin added to marketplace.json",
+        ".lsp.json created for volar-lsp plugin",
+        "Backend serves volar-lsp plugin detail correctly"
+      ],
+      "implementation": [
+        "plugins/volar-lsp/.lsp.json",
+        "marketplace.json (volar-lsp entry)"
+      ],
+      "tests": [
+        "tests/test_api.py (plugin detail endpoint)"
+      ]
     }
   ]
 }
