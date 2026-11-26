@@ -55,3 +55,13 @@ async def test_plugin_detail_endpoint(client: AsyncClient):
 async def test_plugin_detail_not_found(client: AsyncClient):
     response = await client.get("/api/plugins/nonexistent")
     assert response.status_code == 404
+
+@pytest.mark.asyncio
+async def test_plugin_detail_volar_lsp_endpoint(client: AsyncClient):
+    response = await client.get("/api/plugins/volar-lsp")
+    assert response.status_code == 200
+    plugin = response.json()
+    assert plugin["id"] == "volar-lsp"
+    assert plugin["name"] == "Volarlsp LSP"
+    assert "lspServers" in plugin
+    assert "vue-language-server" in plugin["lspServers"]
